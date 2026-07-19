@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26336C1C60167D17AC3B8406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B75A055B7BF7D632A44ECC9 /* Assets.xcassets */; };
+		3D0C66A904610D3F3DC1B7AC /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7B224800EA9D495821244 /* FirstLaunchView.swift */; };
+		4336DF35B254F4BA3A6857FA /* QuotaDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */; };
+		461089AB420BFC13FD571FEE /* QuotaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928286298026A6360CDD127 /* QuotaModels.swift */; };
+		478BD95B80FB08CBDD698C0B /* CodexQuotaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA342CA9F18677CC073BF054 /* CodexQuotaService.swift */; };
+		4B5F688DCA7B2927343D51DC /* QuotaComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8E233DBCCD3AA18FCB1E7 /* QuotaComponents.swift */; };
+		6ECC8E110F18CD5873833A8C /* QuotaMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34A7B7F6EA5BD7C1649838 /* QuotaMonitor.swift */; };
+		C22FFB18D14C331BFEE0A04B /* CodexPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD34768B441974F404B297 /* CodexPulseApp.swift */; };
+		D26607BF6B100EDE7895A1A7 /* CodexQuotaServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF1E78E1A7DBC81617A3FF /* CodexQuotaServiceTests.swift */; };
+		D516F8491AE1B0DAC37EB801 /* QuotaModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1477B1BE6B0F2CCA79EF302 /* QuotaModelsTests.swift */; };
+		D9FC96EC4923A239BFA64E37 /* CodexExecutableLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1639E92B3B8E699550120FBA /* CodexExecutableLocatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A790E401B034EAD1D38FFFE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9544440A048B67237A186533 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9645E8FE5026D65ECBFC81B7;
+			remoteInfo = CodexPulse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A8E233DBCCD3AA18FCB1E7 /* QuotaComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaComponents.swift; sourceTree = "<group>"; };
+		0B75A055B7BF7D632A44ECC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1639E92B3B8E699550120FBA /* CodexExecutableLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexExecutableLocatorTests.swift; sourceTree = "<group>"; };
+		1D34A7B7F6EA5BD7C1649838 /* QuotaMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaMonitor.swift; sourceTree = "<group>"; };
+		3455432863869544C20E6444 /* CodexPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodexPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFEF719C9C4982057D06495 /* CodexPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1477B1BE6B0F2CCA79EF302 /* QuotaModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaModelsTests.swift; sourceTree = "<group>"; };
+		AA342CA9F18677CC073BF054 /* CodexQuotaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexQuotaService.swift; sourceTree = "<group>"; };
+		B928286298026A6360CDD127 /* QuotaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaModels.swift; sourceTree = "<group>"; };
+		C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaDashboardView.swift; sourceTree = "<group>"; };
+		E2FF1E78E1A7DBC81617A3FF /* CodexQuotaServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexQuotaServiceTests.swift; sourceTree = "<group>"; };
+		EBBD34768B441974F404B297 /* CodexPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexPulseApp.swift; sourceTree = "<group>"; };
+		EDD7B224800EA9D495821244 /* FirstLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01B9CF20715DE5588ACE5C4F /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				1D34A7B7F6EA5BD7C1649838 /* QuotaMonitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		091CA94440CF5FB211A5D469 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4FC952EA5504784F92401501 /* Backend */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1BB2977241211914987C1819 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B928286298026A6360CDD127 /* QuotaModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3FCA1091E4CA5172FC3A27F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA342CA9F18677CC073BF054 /* CodexQuotaService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4FC952EA5504784F92401501 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				1639E92B3B8E699550120FBA /* CodexExecutableLocatorTests.swift */,
+				E2FF1E78E1A7DBC81617A3FF /* CodexQuotaServiceTests.swift */,
+				A1477B1BE6B0F2CCA79EF302 /* QuotaModelsTests.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		7042B9C518CF6961637B70CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B75A055B7BF7D632A44ECC9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9379F5737BE98526A5969622 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC7A4ABE86DA859914DCB9F /* App */,
+				1BB2977241211914987C1819 /* Models */,
+				01B9CF20715DE5588ACE5C4F /* Monitor */,
+				7042B9C518CF6961637B70CD /* Resources */,
+				3FCA1091E4CA5172FC3A27F6 /* Services */,
+				B738EDB0AD89C80D0D547E8A /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B738EDB0AD89C80D0D547E8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDD7B224800EA9D495821244 /* FirstLaunchView.swift */,
+				06A8E233DBCCD3AA18FCB1E7 /* QuotaComponents.swift */,
+				C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB02FAA8B716A6E70C7CD5E1 = {
+			isa = PBXGroup;
+			children = (
+				9379F5737BE98526A5969622 /* Sources */,
+				091CA94440CF5FB211A5D469 /* Tests */,
+				D4126A273FC86F72ACFEF9F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCC7A4ABE86DA859914DCB9F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD34768B441974F404B297 /* CodexPulseApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4126A273FC86F72ACFEF9F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3455432863869544C20E6444 /* CodexPulse.app */,
+				5EFEF719C9C4982057D06495 /* CodexPulseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6470641E7FCC130179B16BFA /* CodexPulseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2833A28D386C9AE0AF7D7368 /* Build configuration list for PBXNativeTarget "CodexPulseTests" */;
+			buildPhases = (
+				46387AEF6C1BB1704D1EF123 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				784A28862648740D7DB2F286 /* PBXTargetDependency */,
+			);
+			name = CodexPulseTests;
+			packageProductDependencies = (
+			);
+			productName = CodexPulseTests;
+			productReference = 5EFEF719C9C4982057D06495 /* CodexPulseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9645E8FE5026D65ECBFC81B7 /* CodexPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3387E76BC7B1447456DE9591 /* Build configuration list for PBXNativeTarget "CodexPulse" */;
+			buildPhases = (
+				82962BBFBF1877446604B8EF /* Sources */,
+				A681C3AFE2A2AC448D036863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodexPulse;
+			packageProductDependencies = (
+			);
+			productName = CodexPulse;
+			productReference = 3455432863869544C20E6444 /* CodexPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9544440A048B67237A186533 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6470641E7FCC130179B16BFA = {
+						ProvisioningStyle = Automatic;
+					};
+					9645E8FE5026D65ECBFC81B7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1466055746D86AC5F3806563 /* Build configuration list for PBXProject "CodexPulse" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BB02FAA8B716A6E70C7CD5E1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D4126A273FC86F72ACFEF9F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9645E8FE5026D65ECBFC81B7 /* CodexPulse */,
+				6470641E7FCC130179B16BFA /* CodexPulseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A681C3AFE2A2AC448D036863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26336C1C60167D17AC3B8406 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46387AEF6C1BB1704D1EF123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FC96EC4923A239BFA64E37 /* CodexExecutableLocatorTests.swift in Sources */,
+				D26607BF6B100EDE7895A1A7 /* CodexQuotaServiceTests.swift in Sources */,
+				D516F8491AE1B0DAC37EB801 /* QuotaModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82962BBFBF1877446604B8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22FFB18D14C331BFEE0A04B /* CodexPulseApp.swift in Sources */,
+				478BD95B80FB08CBDD698C0B /* CodexQuotaService.swift in Sources */,
+				3D0C66A904610D3F3DC1B7AC /* FirstLaunchView.swift in Sources */,
+				4B5F688DCA7B2927343D51DC /* QuotaComponents.swift in Sources */,
+				4336DF35B254F4BA3A6857FA /* QuotaDashboardView.swift in Sources */,
+				461089AB420BFC13FD571FEE /* QuotaModels.swift in Sources */,
+				6ECC8E110F18CD5873833A8C /* QuotaMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		784A28862648740D7DB2F286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9645E8FE5026D65ECBFC81B7 /* CodexPulse */;
+			targetProxy = A790E401B034EAD1D38FFFE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08E54B59F110DD46D41CCCFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse;
+				PRODUCT_NAME = CodexPulse;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42B8A70AA389A9B4439CD192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../../../CodexPulse.app/Contents/MacOS",
+				);
+				OTHER_LDFLAGS = (
+					"$(BUILT_PRODUCTS_DIR)/CodexPulse.app/Contents/MacOS/CodexPulse.debug.dylib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Release;
+		};
+		61F212D02D7A83D733C0D3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A4857B260B5037A2FBED4801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse;
+				PRODUCT_NAME = CodexPulse;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAFB586CDD3603C96D3706D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../../../CodexPulse.app/Contents/MacOS",
+				);
+				OTHER_LDFLAGS = (
+					"$(BUILT_PRODUCTS_DIR)/CodexPulse.app/Contents/MacOS/CodexPulse.debug.dylib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		BE1A1F9BE79C1E2382683E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1466055746D86AC5F3806563 /* Build configuration list for PBXProject "CodexPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F212D02D7A83D733C0D3EB /* Debug */,
+				BE1A1F9BE79C1E2382683E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2833A28D386C9AE0AF7D7368 /* Build configuration list for PBXNativeTarget "CodexPulseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFB586CDD3603C96D3706D4 /* Debug */,
+				42B8A70AA389A9B4439CD192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3387E76BC7B1447456DE9591 /* Build configuration list for PBXNativeTarget "CodexPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4857B260B5037A2FBED4801 /* Debug */,
+				08E54B59F110DD46D41CCCFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9544440A048B67237A186533 /* Project object */;
+}
