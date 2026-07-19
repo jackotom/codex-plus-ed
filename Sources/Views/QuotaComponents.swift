@@ -16,7 +16,7 @@ struct PrimaryQuotaCard: View {
                     .foregroundStyle(remainingPercent == 0 ? Color.primary : Color.secondary)
 
                 if let resetCredits {
-                    Text("额外额度 ×\(resetCredits)")
+                    Text("可额外重置 \(resetCredits) 次")
                         .font(.system(size: 11))
                         .foregroundStyle(.secondary)
                 }
@@ -97,7 +97,11 @@ struct QuotaBucketCard: View {
     }
 
     private var displayName: String {
-        bucket.limitName ?? bucket.limitId
+        let rawName = bucket.limitName ?? bucket.limitId
+        if bucket.limitId.caseInsensitiveCompare("codex") == .orderedSame {
+            return rawName.caseInsensitiveCompare("codex") == .orderedSame ? "Codex" : rawName
+        }
+        return rawName.replacingOccurrences(of: "-Codex-", with: " Codex ")
     }
 
     private var windows: [RateLimitWindow] {
@@ -207,7 +211,7 @@ struct QuotaUnavailableCard: View {
     }
 }
 
-private enum QuotaFormatting {
+enum QuotaFormatting {
     static func windowLabel(_ minutes: Int?) -> String {
         guard let minutes else { return "额度窗口" }
         if minutes >= 1_440, minutes.isMultiple(of: 1_440) {

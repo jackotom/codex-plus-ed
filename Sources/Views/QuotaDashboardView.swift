@@ -107,7 +107,7 @@ struct QuotaDashboardView: View {
                 .font(.system(size: 13, weight: .semibold))
 
             if let plan = monitor.snapshot?.primaryBucket?.planType {
-                Text(plan)
+                Text(plan.localizedCapitalized)
                     .font(.system(size: 11, weight: .medium))
                     .padding(.horizontal, 7)
                     .padding(.vertical, 3)
@@ -116,6 +116,17 @@ struct QuotaDashboardView: View {
             }
 
             Spacer()
+
+            Button {
+                (NSApplication.shared.delegate as? FirstLaunchCoordinator)?.showMainWindow()
+            } label: {
+                Image(systemName: "macwindow")
+                    .frame(width: 28, height: 28)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.borderless)
+            .help("打开主界面")
+            .accessibilityLabel("打开主界面")
 
             Button {
                 monitor.refreshNow()

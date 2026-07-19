@@ -12,7 +12,7 @@ Download `CodexPulse-0.1-macOS.zip` from the [v0.1 release](https://github.com/j
 
 Requirements: macOS 14 or later, with the official ChatGPT or Codex app installed and signed in.
 
-The first launch shows a short welcome screen; after that, click the percentage in the status bar to view reset times and every available allowance window.
+The first launch shows a short welcome screen, then opens the main allowance dashboard. Choose **Hide to Menu Bar** to keep monitoring without the main window. Click the percentage in the menu bar for the compact popover, or open Codex Pulse from Applications again to bring the main dashboard back.
 
 ## Privacy
 

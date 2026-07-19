@@ -1,7 +1,7 @@
 name: CodexPulse
 
 options:
-  bundleIdPrefix: com.buzhi
+  bundleIdPrefix: cc.acyg
   deploymentTarget:
     macOS: "14.0"
 
@@ -21,7 +21,7 @@ targets:
       - path: Sources
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.buzhi.codexpulse
+        PRODUCT_BUNDLE_IDENTIFIER: cc.acyg.codexplused
         PRODUCT_NAME: CodexPulse
         MARKETING_VERSION: "0.1"
         CURRENT_PROJECT_VERSION: "1"
@@ -42,7 +42,7 @@ targets:
       - target: CodexPulse
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.buzhi.codexpulse.tests
+        PRODUCT_BUNDLE_IDENTIFIER: cc.acyg.codexplused.tests
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: ""
         BUNDLE_LOADER: ""

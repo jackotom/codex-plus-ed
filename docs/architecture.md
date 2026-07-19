@@ -2,7 +2,7 @@
 
 ## Product contract
 
-Codex Pulse is a native macOS menu-bar utility. It shows the remaining percentage for the primary Codex weekly limit in the menu bar and opens a compact dashboard with all returned Codex limit buckets, reset time, account plan, reset-credit count, connection state, and last refresh time.
+Codex Pulse is a native macOS menu-bar utility with a reopenable main window. It shows the remaining percentage for the primary Codex weekly limit in the menu bar, opens a compact status popover, and provides a larger dashboard for the primary and additional returned quota windows.
 
 The display refreshes once per second. Requests are sequential so a slow request never creates a backlog.
 
@@ -28,6 +28,10 @@ Backend owns these names for the UI:
 - `QuotaMonitor`: main-actor observable state that polls once per second.
 
 Frontend reads `QuotaMonitor.snapshot`, `QuotaMonitor.connectionState`, `QuotaMonitor.lastError`, and calls `start()`, `refreshNow()`, or `stop()`.
+
+## Application lifecycle
+
+One AppKit coordinator owns the `NSStatusItem`, `NSPopover`, welcome window, main window, and the single shared `QuotaMonitor`. Hiding or closing the main window must not stop monitoring. A Finder reopen presents the existing main window; only an explicit quit stops the monitor and terminates the process.
 
 ## Trust boundary
 

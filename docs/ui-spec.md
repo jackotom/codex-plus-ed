@@ -2,18 +2,18 @@
 
 ## Completion contract
 
-The UI is accepted when it provides a native macOS menu-bar label, a compact `MenuBarExtra` window, and clearly distinguishable normal, first-load, stale/error, unavailable, and exhausted states. It must remain readable in light/dark mode, with keyboard and VoiceOver, and with real Chinese content at 100% and 200% interface scale.
+The UI is accepted when it provides a native macOS menu-bar label, a compact status popover, a clean reopenable main dashboard, and clearly distinguishable normal, first-load, stale/error, unavailable, and exhausted states. It must remain readable in light/dark mode, with keyboard and VoiceOver, and with real Chinese content at 100% and 200% interface scale.
 
 ## Platform shape
 
-- Use `MenuBarExtra` with `.menuBarExtraStyle(.window)`. Apple defines this as a popover-like window intended for data-rich menu-bar extras; do not reproduce a custom title bar, arrow, shadow, or rounded outer shell.
-- Target macOS 14. The panel is a single level: no navigation stack, tab bar, sidebar, sheet, or settings screen in v1.
+- Use one strongly retained `NSStatusItem` and one native `NSPopover`; do not reproduce a custom title bar, arrow, shadow, or rounded outer shell.
+- Target macOS 14. The status popover is a single level: no navigation stack, tab bar, sidebar, sheet, or settings screen in v1.
 - Root content width: **336 pt**. Outer padding: **16 pt** horizontal, **14 pt** top, **12 pt** bottom.
 - Natural panel height: **260–520 pt**. The header, primary quota, warning, and footer stay visible. Only the quota-detail region scrolls when content would exceed 520 pt.
 - Do not force a translucent custom background over the window. Use the native window background; inner cards may use a system material or semantic control background plus a subtle separator.
 - The app has no Dock icon, so the panel must expose both **Refresh** and **Quit Codex Pulse** actions.
 
-References: [MenuBarExtra](https://developer.apple.com/documentation/swiftui/menubarextra), [window menu-bar style](https://developer.apple.com/documentation/swiftui/menubarextrastyle/window), [macOS design guidance](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos/).
+References: [NSStatusItem](https://developer.apple.com/documentation/appkit/nsstatusitem), [NSPopover](https://developer.apple.com/documentation/appkit/nspopover), [macOS design guidance](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos/).
 
 ## First-launch welcome window
 
@@ -58,6 +58,16 @@ Use 8 pt between the icon and brand label, 6–8 pt within text groups, 12 pt be
 - The button needs the native hover, pressed, disabled, and keyboard-focus treatments. No entrance animation is required; Reduce Motion therefore needs no alternate presentation.
 - At 200% interface scale, allow the content area to scroll vertically rather than clipping text or shrinking fonts. The default 100% layout must not scroll.
 - Verify light mode, dark mode, Increase Contrast, keyboard-only use, VoiceOver reading order, standard window close behavior, and the one-time completion rule.
+
+## Main dashboard window
+
+- Normal launch and Finder reopen show the main dashboard in front. Hiding or closing it leaves the status item and quota monitor running.
+- Default content size is **920 × 450 pt**; minimum content size is **820 × 440 pt**. Correct invalid legacy autosaved frames before presenting the window.
+- Use one toolbar and one content level. Do not add a sidebar, duplicate title, marketing cards, or duplicate refresh/hide actions.
+- Toolbar: app icon, product name, plan, connection state, refresh, and `隐藏到状态栏`.
+- Content: the primary weekly quota is the left hero; other returned windows are shown in a flexible right column. Do not repeat the same primary weekly window in both columns.
+- Keep content centered with a maximum width of 1,040 pt. At larger window sizes, extra space belongs to the plain window background rather than stretching cards indefinitely.
+- Use vertical scrolling only when content, accessibility scaling, or many returned buckets exceed the available height. The default healthy state must not scroll.
 
 ## Information hierarchy
 
@@ -184,7 +194,7 @@ Keep the regular dashboard structure. The ring is empty and red, centered value 
 
 ## Interaction
 
-- Single click on the status item toggles the native window. Clicking elsewhere dismisses it through standard `MenuBarExtra` behavior.
+- Single click on the status item toggles the native popover. Clicking elsewhere dismisses it through standard `NSPopover` transient behavior.
 - Refresh is idempotent: one click starts one request; repeated clicks while loading do nothing.
 - The one-second background refresh must not steal keyboard focus, reset scroll position, flash the panel, or announce unchanged values.
 - The detail list preserves its current scroll position while the panel remains open.

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26336C1C60167D17AC3B8406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B75A055B7BF7D632A44ECC9 /* Assets.xcassets */; };
+		267F43373D7810120E921963 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7AEBA68EDBF8251C187BC /* MainDashboardView.swift */; };
 		3D0C66A904610D3F3DC1B7AC /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7B224800EA9D495821244 /* FirstLaunchView.swift */; };
 		4336DF35B254F4BA3A6857FA /* QuotaDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */; };
 		461089AB420BFC13FD571FEE /* QuotaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928286298026A6360CDD127 /* QuotaModels.swift */; };
@@ -39,6 +40,7 @@
 		5EFEF719C9C4982057D06495 /* CodexPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1477B1BE6B0F2CCA79EF302 /* QuotaModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaModelsTests.swift; sourceTree = "<group>"; };
 		AA342CA9F18677CC073BF054 /* CodexQuotaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexQuotaService.swift; sourceTree = "<group>"; };
+		B5E7AEBA68EDBF8251C187BC /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
 		B928286298026A6360CDD127 /* QuotaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaModels.swift; sourceTree = "<group>"; };
 		C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaDashboardView.swift; sourceTree = "<group>"; };
 		E2FF1E78E1A7DBC81617A3FF /* CodexQuotaServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexQuotaServiceTests.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD7B224800EA9D495821244 /* FirstLaunchView.swift */,
+				B5E7AEBA68EDBF8251C187BC /* MainDashboardView.swift */,
 				06A8E233DBCCD3AA18FCB1E7 /* QuotaComponents.swift */,
 				C356D9EAAC8E695EBD43A1D6 /* QuotaDashboardView.swift */,
 			);
@@ -251,6 +254,7 @@
 				C22FFB18D14C331BFEE0A04B /* CodexPulseApp.swift in Sources */,
 				478BD95B80FB08CBDD698C0B /* CodexQuotaService.swift in Sources */,
 				3D0C66A904610D3F3DC1B7AC /* FirstLaunchView.swift in Sources */,
+				267F43373D7810120E921963 /* MainDashboardView.swift in Sources */,
 				4B5F688DCA7B2927343D51DC /* QuotaComponents.swift in Sources */,
 				4336DF35B254F4BA3A6857FA /* QuotaDashboardView.swift in Sources */,
 				461089AB420BFC13FD571FEE /* QuotaModels.swift in Sources */,
@@ -283,7 +287,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.acyg.codexplused;
 				PRODUCT_NAME = CodexPulse;
 				SDKROOT = macosx;
 			};
@@ -302,7 +306,7 @@
 				OTHER_LDFLAGS = (
 					"$(BUILT_PRODUCTS_DIR)/CodexPulse.app/Contents/MacOS/CodexPulse.debug.dylib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.acyg.codexplused.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "";
 			};
@@ -388,7 +392,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.acyg.codexplused;
 				PRODUCT_NAME = CodexPulse;
 				SDKROOT = macosx;
 			};
@@ -407,7 +411,7 @@
 				OTHER_LDFLAGS = (
 					"$(BUILT_PRODUCTS_DIR)/CodexPulse.app/Contents/MacOS/CodexPulse.debug.dylib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.buzhi.codexpulse.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.acyg.codexplused.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "";
 			};
